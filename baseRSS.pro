@@ -8,6 +8,7 @@ QT       += core gui widgets
 QT       += network xml webkit
 QT += webkitwidgets
 
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = rssTest2
@@ -22,4 +23,5 @@ HEADERS  += mainwindow.h \
     controler.h
 
 FORMS    += \
-    ../../../Desktop/rssTest2-3/mainwindow.ui
+    /Users/lazy/Workspaces/QTWorkSpace/breadxiayanan/mainwindow.ui \
+    mainwindow.ui

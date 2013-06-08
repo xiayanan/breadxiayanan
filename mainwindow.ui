@@ -6,28 +6,31 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1440</width>
-    <height>791</height>
+    <width>1200</width>
+    <height>855</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 240, 230);</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWebView" name="webView">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>370</x>
       <y>0</y>
-      <width>1051</width>
-      <height>761</height>
+      <width>800</width>
+      <height>750</height>
      </rect>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 255), stop:0.19397 rgba(0, 0, 0, 255), stop:0.202312 rgba(122, 97, 0, 255), stop:0.495514 rgba(76, 58, 0, 255), stop:0.504819 rgba(255, 255, 255, 255), stop:0.79 rgba(255, 255, 255, 255), stop:1 rgba(255, 158, 158, 255));</string>
+     <string notr="true">background-color: rgb(255, 239, 247);</string>
     </property>
     <property name="url">
      <url>
@@ -39,16 +42,110 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
-      <width>381</width>
-      <height>401</height>
+      <y>30</y>
+      <width>180</width>
+      <height>750</height>
      </rect>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 255), stop:0.19397 rgba(0, 0, 0, 255), stop:0.202312 rgba(122, 97, 0, 255), stop:0.495514 rgba(76, 58, 0, 255), stop:0.504819 rgba(255, 255, 255, 255), stop:0.79 rgba(255, 255, 255, 255), stop:1 rgba(255, 158, 158, 255));</string>
+     <string notr="true">background-color: rgb(255, 240, 230);</string>
+    </property>
+    <property name="lineWidth">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>()</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>220</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 240, 230);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="favoriteButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="unreadButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>0</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="allButton">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>0</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>三</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addFavorButton">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>0</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>*</string>
     </property>
    </widget>
   </widget>
@@ -57,7 +154,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1440</width>
+     <width>1200</width>
      <height>22</height>
     </rect>
    </property>

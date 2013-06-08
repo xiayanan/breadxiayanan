@@ -22,12 +22,10 @@ ReadController::ReadController(ReadToolBar* readtools,QWebView* view)
 }
 
 FeedsToolBar::FeedsToolBar()
-
 {
-    addsse_button=ui->addButton;
-    refresh_button=ui->refreshButton;
-
-    connect(ui->addButton,SIGNAL(clicked()),this,SLOT(addsse()));
+    //addsse_button=ui->addButton;
+    //refresh_button=ui->refreshButton;
+    //connect(ui->addButton,SIGNAL(clicked()),this,SLOT(addsse()));
    // connect(refresh_button,SIGNAL(clicked()),this,SLOT(refresh()));
 }
 
@@ -46,13 +44,18 @@ void FeedsToolBar::refresh(){
 
 ItemsToolBar::ItemsToolBar()
 {
-    favorite_button=ui->favoriteButton;
-    hasread_button=ui->unreadButton;
-    all_button=ui->allButton;
+    //favorite_button=ui->favoriteButton;
+    //hasread_button=ui->unreadButton;
+    //all_button=ui->allButton;
     //connect(favorite_button,SIGNAL(clicked()),this,SLOT(favoritelist()));
    // connect(hasread_button,SIGNAL(clicked()),this,SLOT(hasreadlist()));
    // connect(all_button,SIGNAL(clicked()),this,SLOT(alllist()));
 }
+
+ItemsToolBar::~ItemsToolBar(){
+
+}
+
 void ItemsToolBar::favoritelist(){
     //点击喜欢按钮时列出标记喜欢的items
 }
@@ -67,8 +70,12 @@ void ItemsToolBar::alllist(){
 
 ReadToolBar::ReadToolBar()
 {
-    addfavorbutton=ui->addFavorButton;
+   // addfavorbutton=ui->addFavorButton;
 //    connect(addfavorbutton,SIGNAL(clicked()),this,SLOT(addfavor()));
+}
+
+ReadToolBar::~ReadToolBar(){
+
 }
 
 void ReadToolBar::addfavor(){
